@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Fő oldal</a>
+        </div>
+      </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h1>Egyszerű számológép</h1>
+                <div>
+                    <p>Add meg az első számot</p>
+                    <input id="num1" type="text">
+                </div>
+                <br>
+                <div>
+                    <p>Add meg az második számot</p>
+                    <input id="num2" type="text">
+                </div>
+                <br>
+                <input type="button" value="+" onclick="doPlus()" />
+                <input type="button" value="-" onclick="doMinus()" />
+                <input type="button" value="*" onclick="doSzor()" />
+                <input type="button" value="/" onclick="doOszt()" />
+                <br>
+                <input id="clear" type="button" value="Clear" onclick="doClear()" />
+            </div>
+            <br>
+            <p id="summa"></p>
+        </div class="col-8">
+
+        <div class="col-2"></div>
+    </div>
+    </div>
+
+    <script src="js/calc.js"></script>
+</body>
+
+</html>
